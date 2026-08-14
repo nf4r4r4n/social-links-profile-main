@@ -26,6 +26,12 @@ body {
 }
 
 /* Container */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
 .container {
     max-width: 375px;
     width: 90%;
@@ -36,28 +42,22 @@ body {
     gap: 20px;
     background-color: var(--grey-800);
     height: max-content;
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
     text-align: center;
-}
-
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        margin: 0 auto;
-    }
 }
 
 /* Profile picture */
 .profile-container {
     position: relative;
-    width: 80px;
+    width: 100px;
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -20px;
 }
 
 .profile-image {
@@ -88,6 +88,12 @@ body {
     background-color: var(--grey-700);
     color: var(--white);
     border-radius: 10px;
+}
+
+.social-link:hover {
+    background-color: var(--green);
+    color: var(--grey-900);
+    transition: .2s;
 }
 
 @media (min-width: 768px) {
